@@ -1,0 +1,26 @@
+{
+  "name": "building_project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "concurrently \"npx tailwindcss -i ./src/frontend/tailwindcss/index.scss -o ./src/frontend/scss/tailwind.scss\" \"vite build --config vite.config.js",
+    "watch": "concurrently \"npx tailwindcss -i ./src/frontend/tailwindcss/index.scss -o ./src/frontend/scss/tailwind.scss  -w\" \"vite build --config vite.config.js --watch\"",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@small-tech/vite-plugin-sri": "^1.0.1",
+    "autoprefixer": "^10.4.13",
+    "concurrently": "7.6.0",
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.20",
+    "sass": "^1.56.1",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.1",
+    "vite-plugin-manifest-sri": "^0.1.0"
+  },
+  "dependencies": {
+    "swiper": "^8.4.5"
+  }
+}

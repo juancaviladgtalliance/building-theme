@@ -1,0 +1,19 @@
+{
+    "name": "juanv/building-project",
+    "description": "Building theme boilerplate",
+    "type": "project",
+    "license": "GPL-3",
+    "autoload": {
+        "psr-4": {
+            "Juanv\\BuildingProject\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "TREMGROUP",
+            "email": "juancarlos.avila@dgtalliance.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
